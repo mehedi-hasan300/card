@@ -1,12 +1,27 @@
 /* Reset & base */
-* { margin:0; padding:0; box-sizing:border-box; }
-body { font-family: Arial, sans-serif; line-height:1.6; color:#333; }
-a { text-decoration:none; color: inherit; }
-header, section, footer { padding: 4rem 5%; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+header,
+section,
+footer {
+  padding: 2rem 3%;
+}
 
 /* Header */
 header {
-  background: url('https://surl.li/dwdhfy') center/cover no-repeat;
+  background: url("https://surl.li/dwdhfy") center/cover no-repeat;
   height: 600px;
   position: relative;
   /* display: flex; */
@@ -17,7 +32,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 
 .navbar a {
@@ -30,94 +44,137 @@ header {
   color: var(--text-color);
 }
 .header-overlay {
-  
   padding: 2rem;
   max-width: 600px;
   border-radius: 8px;
-  
 }
-.header-overlay h1 { font-size: 2.5rem; margin-bottom:1rem; }
-.header-overlay p { font-size: 1.2rem; margin-bottom:1.5rem; }
+.header-overlay h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.header-overlay p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
 
 /* Buttons */
-.btn { padding:0.8rem 1.5rem; border:none; border-radius:4px; cursor:pointer; font-size:1rem; }
-.btn-primary { background:#0033cc; color:#fff; margin-right:10px; }
-.btn-secondary { background:#fff; color:#0033cc; border:2px solid #0033cc; }
+.btn {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.btn-primary {
+  background: #0033cc;
+  color: #fff;
+  margin-right: 10px;
+}
+.btn-secondary {
+  background: #fff;
+  color: #0033cc;
+  border: 2px solid #0033cc;
+}
 
 /* Clients */
-.clients { text-align: center; }
-.clients-logos img { max-height:180px; margin: 0 15px; vertical-align:middle; }
+.clients {
+  text-align: center;
+}
+.clients-logos img {
+  max-height: 180px;
+  margin: 0 15px;
+  vertical-align: middle;
+}
 
 /* Work example */
 .work-example {
-  display:flex;
-  align-items:center;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  gap:2rem;
+  gap: 2rem;
 }
-.work-text { max-width: 400px; }
+.work-text {
+  max-width: 300px;
+  gap: 3px;
+}
 .work-example img {
-  max-width:300px;
+  max-width: 300px;
   height: 300px;
-  border-radius:8px;
-  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-
-
-
-
-
-
 
 /* Team cards */
 .team-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-  gap:2rem;
-  margin-top:2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
 }
 .card {
-  text-align:center;
+  text-align: center;
 }
 .card img {
-  width:150px;
-  height:150px;
-  border-radius:50%;
-  object-fit:cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
 }
-.card h3 { margin:0.8rem 0 0.3rem; }
+.card h3 {
+  margin: 0.8rem 0 0.3rem;
+}
 
 /* Centered button */
 .btn-center {
-  display:block;
-  margin:3rem auto 0;
-  max-width:200px;
+  display: block;
+  margin: 3rem auto 0;
+  max-width: 200px;
 }
 
 /* Sections */
-.results, .campaign-stats { text-align:center; }
+.results,
+.campaign-stats {
+  text-align: center;
+}
 .testimonial blockquote {
-  font-style:italic;
-  text-align:center;
-  max-width:700px;
-  margin:2rem auto;
+  font-style: italic;
+  text-align: center;
+  max-width: 700px;
+  margin: 2rem auto;
 }
 
 /* Footer */
 .footer {
-  background:#f5f5f5;
-  display:flex;
-  flex-wrap:wrap;
+  background: #f5f5f5;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  gap:2rem;
+  gap: 2rem;
 }
-.footer-section { flex:1; min-width:200px; }
-.footer-section h4 { margin-bottom:1rem; font-size:1.1rem; }
-.footer-section p, .footer-section a { font-size:0.95rem; }
-.social-icons img { width:24px; margin-right:8px; vertical-align:middle; }
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+}
+.footer-section h4 {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+.footer-section p,
+.footer-section a {
+  font-size: 0.95rem;
+}
+.social-icons img {
+  width: 24px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
 
 /* Responsive */
-@media (max-width:768px) {
-  .header-overlay h1 { font-size:2rem; }
-  .work-example { flex-direction:column; }
+@media (max-width: 768px) {
+  .header-overlay h1 {
+    font-size: 2rem;
+  }
+  .work-example {
+    flex-direction: column;
+  }
 }
